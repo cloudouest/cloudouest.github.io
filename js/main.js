@@ -22,7 +22,15 @@
     --------------------*/
     $('.set-bg').each(function () {
         var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
+        console.log($(this).data());
+        var gradient = $(this).data('gradient');
+        if (gradient) {
+            $(this).css('background-image', 'linear-gradient(90deg, rgb(246, 85, 146, '+gradient+'),rgb(94, 105, 221, '+gradient+')), url(' + bg + ')');
+        }
+        else {
+            $(this).css('background-image', 'url(' + bg + ')');
+        }
+        
     });
 
     /*------------------
@@ -74,7 +82,7 @@
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Jours</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Heures</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Minutes</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secondes</p> </div>"));
     });
 
-    $("#countdown-2").countdown("2020/06/18", function(event) {
+    $("#countdown-2").countdown("2020/04/06", function(event) {
         $(this).html(event.strftime("<div class='cd-time'><span>%w</span> <p>Semaines</p> </div>" + "<div class='cd-time'><span>%D</span> <p>Jours</p> </div>" + "<div class='cd-time'><span>%H</span> <p>Heures</p> </div>" + "<div class='cd-time'><span>%M</span> <p>Minutes</p> </div>" + "<div class='cd-time'><span>%S</span> <p>Seconds</p> </div>"));
     });
 

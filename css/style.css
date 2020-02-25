@@ -670,7 +670,8 @@ ol {
 }
 
 .speak-text {
-	background: #f5f5f5;
+	background-color: #f5f5f5;
+	color:#fff;
 	padding: 34px 18px 40px 35px;
 	height: 520px;
 	position: relative;
@@ -682,13 +683,14 @@ ol {
 
 .speak-text:after {
 	position: absolute;
+	color: #fff;
 	content: "";
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: -webkit-gradient(linear, left top, right top, from(#FB3ABE), to(#F149E3));
-	background: linear-gradient(to right, #FB3ABE, #F149E3);
+	background: -webkit-gradient(linear, left top, right top, from(#201D6D), to(rgb(94, 105, 221)));
+	background: linear-gradient(to right, #201D6D, rgb(94, 105, 221));
 	border-radius: 6px;
 	opacity: 0;
 	-webkit-transition: all 0.4s;
@@ -704,7 +706,19 @@ ol {
 	color: #fff;
 }
 
+.speak-text:hover h4 {
+	color: #fff;
+}
+
+.speak-text:hover h5 {
+	color: #fff;
+}
+
 .speak-text:hover .speaker-name h4 {
+	color: #fff;
+}
+
+.speak-text:hover .speaker-name h5 {
 	color: #fff;
 }
 
@@ -713,11 +727,27 @@ ol {
 }
 
 .speak-text h2 {
-	color: #272727;
+	color: #fff;
 	font-size: 36px;
 	font-weight: 900;
 	line-height: 50px;
-	margin-bottom: 198px;
+	margin-bottom: 100px;
+	z-index: 2;
+	position: relative;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.speak-text h4 {
+	color: #fff;
+	z-index: 2;
+	position: relative;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.speak-text h5 {
+	color: #fff;
 	z-index: 2;
 	position: relative;
 	-webkit-transition: all 0.4s;
@@ -732,7 +762,7 @@ ol {
 }
 
 .speak-text .speaker-name h4 {
-	color: #272727;
+	color: #fff;
 	font-size: 24px;
 	font-weight: 900;
 }
@@ -1708,11 +1738,11 @@ ol {
 	color: #fff;
 }
 
-.icon-boxes .speak-text:hover h2 {
+.icon-boxes .speak-text:hover h2,h4,h5 {
 	color: #fff;
 }
 
-.icon-boxes .speak-text:hover .speaker-name h4 {
+.icon-boxes .speak-text:hover .speaker-name h4,h5 {
 	color: #fff;
 }
 
@@ -2159,4 +2189,15 @@ ol {
 	.tab-elem .nav-tabs .nav-item {
 		margin-bottom: 10px;
 	}
+}
+
+
+/* =================================
+------------------------------------
+  Specific Cloud Ouest
+ ------------------------------------
+ ====================================*/
+
+/* default gradient */
+.gradient-img {
 }
