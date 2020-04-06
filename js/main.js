@@ -82,7 +82,7 @@
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Jours</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Heures</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Minutes</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secondes</p> </div>"));
     });
 
-    $("#countdown-2").countdown("2020/04/06", function(event) {
+    $("#countdown-2").countdown("2020/04/18", function(event) {
         $(this).html(event.strftime("<div class='cd-time'><span>%w</span> <p>Semaines</p> </div>" + "<div class='cd-time'><span>%D</span> <p>Jours</p> </div>" + "<div class='cd-time'><span>%H</span> <p>Heures</p> </div>" + "<div class='cd-time'><span>%M</span> <p>Minutes</p> </div>" + "<div class='cd-time'><span>%S</span> <p>Seconds</p> </div>"));
     });
 
